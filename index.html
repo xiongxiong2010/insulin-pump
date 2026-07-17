@@ -61,6 +61,61 @@
             margin-top: 16px;
             position: relative;
         }
+        .price-hero {
+            background: rgba(255,255,255,0.15);
+            border-radius: 16px;
+            padding: 20px 24px;
+            margin-top: 20px;
+            position: relative;
+            border: 1px solid rgba(255,255,255,0.25);
+        }
+        .price-hero .price-row {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+        .price-hero .original-price {
+            font-size: 28px;
+            font-weight: 700;
+            color: rgba(255,255,255,0.5);
+            text-decoration: line-through;
+            text-decoration-thickness: 3px;
+        }
+        .price-hero .arrow-icon {
+            font-size: 24px;
+            color: rgba(255,255,255,0.7);
+        }
+        .price-hero .final-price-box {
+            text-align: center;
+        }
+        .price-hero .final-price-label {
+            font-size: 13px;
+            color: rgba(255,255,255,0.8);
+            margin-bottom: 4px;
+        }
+        .price-hero .final-price-num {
+            font-size: 42px;
+            font-weight: 800;
+            color: #FFD700;
+            line-height: 1;
+            text-shadow: 0 2px 8px rgba(0,0,0,0.2);
+        }
+        .price-hero .final-price-num small {
+            font-size: 16px;
+            font-weight: 400;
+        }
+        .price-hero .save-tag {
+            display: inline-block;
+            background: #FF6B35;
+            color: #fff;
+            font-size: 14px;
+            font-weight: 700;
+            padding: 4px 14px;
+            border-radius: 12px;
+            margin-top: 12px;
+        }
         
         /* Section base */
         .section {
@@ -565,7 +620,18 @@
     <div class="header">
         <h1>珠海糖友<br>你不用再为每天扎针发愁了</h1>
         <div class="subtitle">博士医生®胰岛素泵 · 珠海专属服务指南</div>
-        <div class="badge">🏥 大爱无疆可报销 · 首年自付仅需¥9,320</div>
+        <div class="price-hero">
+            <div class="price-row">
+                <div class="original-price">¥48,200</div>
+                <div class="arrow-icon">→</div>
+                <div class="final-price-box">
+                    <div class="final-price-label">大爱无疆报销后 首年仅需</div>
+                    <div class="final-price-num">¥9,320</div>
+                </div>
+            </div>
+            <div class="save-tag">立省近4万 · 每天不到26元</div>
+        </div>
+        <div class="badge">🏥 珠海市政府主导 · 大爱无疆可报销 · 覆盖116万人</div>
     </div>
     
     <!-- Opening -->
